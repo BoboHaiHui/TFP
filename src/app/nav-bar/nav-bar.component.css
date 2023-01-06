@@ -1,0 +1,37 @@
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+nav a{
+  text-decoration: none;
+}
+.logo{
+  vertical-align: middle;
+}
+.logo img{
+  max-height: 70px;
+}
+
+.quiz{
+  padding: 8px;
+  background-color: #525fe1;
+  border-radius: 50px;
+  color:white;
+  height: 30px;
+  line-height: 15px;
+}
+.quiz a{
+  color:inherit;
+}
+.quiz:hover{
+  color:#525fe1;
+  background-color: white;
+  border:1px solid #525fe1;
+}
+

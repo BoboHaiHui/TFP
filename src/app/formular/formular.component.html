@@ -1,0 +1,33 @@
+<div class="formularContainer">
+  <div class="formularTitle">
+    <h1>Înscrie-te azi !</h1>
+    <h2>Rezervă-ți locul și fi printre cei care vor să facă o schimbare mâine!</h2>
+  </div>
+  <br/>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+    <label for="nume"></label>
+    <input ngModel name="nume" #firstName="ngModel" type="text" id="nume" placeholder="Nume si Prenume"><br><br>
+    <label for="email"></label>
+    <input ngModel name="email" type="email" id="email" placeholder="Adresa de email"><br><br>
+    <label for="telefon"></label>
+    <input ngModel name="telefon" type="phone" id="telefon" placeholder="Numar de telefon"><br><br>
+    <label for="modul"></label>
+    <select ngModel name="modul"  id="modul" placeholder="Selecteaza un modul">
+      <option value="" disabled selected>Selecteaza un modul</option>
+      <option value="Modul 1">Modul 1</option>
+      <option value="Modul 2">Modul 2</option>
+      <option value="Modul 3">Modul 3</option>
+      <option value="Modul 4">Modul 4</option>
+      <option value="Modul Extra">Modul Extra</option>
+    </select>
+    <br><br>
+    <label for="detalii"></label>
+    <textarea ngModel name="detalii" type="text" id="email" placeholder="Mai multe informatii">
+    </textarea>
+
+      <br><br>
+    <label for="btnSubmit"></label>
+    <button type="submit" id="btnSubmit">I'm in!</button>
+
+  </form>
+</div>

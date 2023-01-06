@@ -1,0 +1,33 @@
+<div class="quizContainer">
+<div class="quizDisplay">
+<div class = "quizDisplay1"*ngIf="quizState == 0">
+  <h2>Take a Quiz: </h2>
+  <br>
+  <p class="infoQuiz">After answering this questions, you will get a sugestion,on the module that suits you best.</p>
+  <p>Questions: 5</p>
+  <p>Time: 120s</p>
+  <br>
+  <button class="startButton" (click)="startQuiz()">Start</button>
+</div>
+<div *ngIf="quizState == 1">
+  <div><span> Question {{quizIndex + 1}}/5</span>.                                .<span>{{quizTimer}}s</span></div>
+  <div><p>{{quizData[quizIndex].q}}</p></div>
+  <div>
+    <div class = "quizDisplay2" *ngFor="let item of quizData[quizIndex].a">
+      <input type="radio" name="quizAnswers" [value] = 'item' [(ngModel)]="selectedAnswer">
+      <label for="">{{item}}</label>
+      <br>
+    </div>
+  </div>
+  <div class="butoane">
+    <button class="stopButton" (click)="stopQuiz()">Stop</button>
+    <button class="nextButton" (click)="nextQuestion()">Next</button>
+  </div>
+</div>
+<div class = "quizDisplay3" *ngIf="quizState == 2">
+  <p>Score: {{quizScore}}</p>
+  <p>You should take: {{quizModule}}</p>
+  <button (click)="resetQuiz()">Reset</button>
+</div>
+</div>
+</div>

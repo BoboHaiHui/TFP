@@ -1,0 +1,83 @@
+.quizContainer{
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  display: flex;
+  justify-content: center;
+}
+
+.quizDisplay{
+  text-align: center;
+  width: 500px;
+  height: 600px;
+  background-color: white;
+  padding: 10px;
+  margin: 50px;
+  border-radius: 10px;
+}
+.quizDisplay1 > p{
+  text-align:left;
+}
+
+.infoQuiz{
+  text-align: justify;
+}
+
+.startButton{
+  background-color: #028a3d;
+  width: 60%;
+  height: 40px;
+  border-radius: 4px;
+  font-size: 15px;
+
+}
+.quizDisplay2 {
+  border:1px solid black;
+  border-radius: 5px;
+  margin:5px;
+  font-size: 15px;
+  padding: 5px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.butoane{
+  display:flex;
+  justify-content: space-between;
+  height: 100%;
+  justify-items: flex-end;
+}
+.stopButton{
+  background-color: #ec880c;
+  color:white;
+  border-radius: 5px;
+  min-width: 140px;
+  height: 40px;
+  margin-top: 300px;
+}
+.nextButton{
+  color:white;
+  background-color: #028a3d;
+  border-radius: 5px;
+  min-width: 140px;
+  height: 40px;
+  margin-top: 300px;
+}
+
+.quizDisplay3{
+  display:flex;
+  flex-direction: column;
+  height: 100%;
+}
+.quizDisplay3 p{
+  flex:7 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+}
+.quizDisplay3 button{
+  flex: 1 0 auto;
+  padding: 5px;
+  margin:0px 40px;
+  background: #0880d6;
+  border-radius: 5px;
+}
