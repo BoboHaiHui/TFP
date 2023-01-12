@@ -35,6 +35,8 @@ form button{
   height: 50px;
   width: 500px;
   color:white;
+  font-size: 18px;
+  font-weight: 700;
 }
 form button:hover{
   background-color: #231f40;

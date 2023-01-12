@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,7 @@ import { LocatiiComponent } from './locatii/locatii.component';
 import { TeamComponent } from './team/team.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,11 +28,13 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     LocatiiComponent,
     TeamComponent,
     LandingPageComponent
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

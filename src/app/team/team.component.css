@@ -1,0 +1,48 @@
+.teamContainer{
+  margin:100px;
+}
+.title{
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin:50px;
+}
+
+.teamContainer2{
+  display : flex;
+  justify-content: space-evenly;
+
+}
+
+.teamContainer2 img{
+  border-radius: 100%;
+}
+.teamContainer2 img:hover + .info{
+  visibility: visible;
+}
+
+.teamContainer2 .info{
+  font-size: 30px;
+  position: relative;
+  bottom: 130px;
+  left:130px;
+  visibility: hidden;
+}
+
+.teamContainer2 i{
+  color:#525fe1;
+  background-color:  white;
+  border-radius: 4px;
+  padding: 3px;
+}
+
+.teamContainer2 i:hover{
+  color:white;
+  background-color:  #525fe1;
+  visibility: visible;
+}
+.teamContainer2 p{
+  font-size: 30px;
+  text-align: center;
+}
+
