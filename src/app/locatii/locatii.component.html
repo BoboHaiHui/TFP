@@ -1,33 +1,14 @@
+<p class="titluLocatii">TFP vine la tine in oras!</p>
+<div class="mainContainer">
+  <p><img src={{listaImagini[index-1]}} alt="Image not found" width="350px" height="260px"></p>
+  <p><img src={{listaImagini[index]}} alt="Image not found" width="350px" height="260px"></p>
+  <p><img src={{listaImagini[index+1]}} alt="Image not found" width="350px" height="260px"></p>
 
-  <div id="demo" class="carousel slide" data-ride="carousel">
+</div>
+<div class="butoane">
+  <button (click)="prev()"><i class="fa-solid fa-chevron-left"></i></button>
+  <button (click)="next()"><i class="fa-solid fa-chevron-right"></i></button>
 
-    <!-- Indicators -->
-    <ul class="carousel-indicators">
-      <li data-target="#demo" data-slide-to="0" class="active"></li>
-      <li data-target="#demo" data-slide-to="1"></li>
-      <li data-target="#demo" data-slide-to="2"></li>
-    </ul>
+</div>
 
-    <!-- The slideshow -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./assets/images/brasov.jpg" alt="Los Angeles" width="350px" height="260px">
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/images/iasi.jpg" alt="Chicago" width="350px" height="260px">
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/images/cluj.jpg" alt="New York" width="350px" height="260px">
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </a>
-
-  </div>
 
